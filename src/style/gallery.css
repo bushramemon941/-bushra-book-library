@@ -1,0 +1,62 @@
+.pic {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    perspective: 1000px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 640px) {
+    .pic {
+      height: 300px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .pic {
+      width: 250px;
+      height: 400px;
+    }
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .pic:hover .inner {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+ 
+  
+
+  .back {
+    background: #d56e4c;
+    color: rgb(59, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+ 
+  
+  .gallery{
+    background-color: rgb(230, 116, 75);
+  }
+  .font-serif{
+    color: aliceblue;
+  }
