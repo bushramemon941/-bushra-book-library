@@ -145,7 +145,6 @@ const Gallery = () => {
               </div>
             </div>
 
-            {/* Repeat the same structure for the 5th and 6th books */}
             {/* 5th Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
@@ -162,7 +161,7 @@ const Gallery = () => {
                       The Man in the Iron Mask
                     </h1>
                     <p className="font-serif leading-relaxed text-center">
-                      A simple retelling of the four Musketeers' final adventure during which they plot to replace the King.
+                      A simple retelling of the four Musketeers&#39; final adventure during which they plot to replace the King.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book5"}>

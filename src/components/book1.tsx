@@ -39,7 +39,8 @@ const Book = () => {
         <a href="#">Epic Fantasy</a>
         <a href="#">Science Fiction</a>
         <a href="#">Romance</a>
-        <a href="#">Drizzt Do&rsquo;Urden</a> {/* Escaped apostrophe */}
+        <a href="#">Drizzt Do&rsquo;Urden</a>
+
         <a href="#">Forgotten Realms</a>
       </nav>
 

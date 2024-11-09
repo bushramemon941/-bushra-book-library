@@ -49,10 +49,10 @@ const Book = () => {
           <h2 className="book-title">The Mark of Athena</h2>
           <p className="book-author">Rick Riordan</p>
           <p className="book-description">
-            "The Greek and Roman demigods will have to cooperate in order to
+            &ldquo;The Greek and Roman demigods will have to cooperate in order to
             defeat the giants released by the Earth Mother, Gaea. Then they will
-            have to sail together to the ancient land--Greece itself--to find
-            the Doors of Death&#34;-- {/*Escaped apostrophe in "Gaea's" and quote*/}
+            have to sail together to the ancient land&mdash;Greece itself&mdash;to find
+            the Doors of Death&rdquo;
           </p>
           <div className="book-links">
             <a href="#">Search</a> | <a href="#">Find on Amazon</a>
