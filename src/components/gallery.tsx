@@ -1,9 +1,16 @@
 "use client";
 import "../style/gallery.css";
-
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+
+// Static imports for images
+import theLoneDrowImage from "../../public/image/thelonedrow.jpg";
+import theChannelingImage from "../../public/image/thechanneling.jpg";
+import book3Image from "../../public/image/book3.jpg";
+import book4Image from "../../public/image/book4.jpg";
+import book5Image from "../../public/image/book5.jpg";
+import book6Image from "../../public/image/book6.jpg";
 
 const Gallery = () => {
   return (
@@ -18,24 +25,23 @@ const Gallery = () => {
 
           {/* Responsive grid for gallery items */}
           <div className="flex flex-wrap justify-center -m-4">
-            {/* book-1*/}
+            {/* 1st Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
                 <div className="inner">
                   <div className="front">
                     <Image
-                      alt="book image"
+                      alt="The Lone Drow book cover"
                       className="absolute inset-0 w-full h-full object-cover"
-                      src={require("../../public/image/thelonedrow.jpg")}
+                      src={theLoneDrowImage}
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full  hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
+                  <div className="px-8 py-10 relative z-10 w-full hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
                     <h1 className="title-font text-2xl font-medium text-center mb-3 text-red-950">
-                      The lone drow
+                      The Lone Drow
                     </h1>
-                    <p className="font-serif leading-relaxed text-center ">
-                      Alone on the battlefield.Surrounded by death.Cornered by
-                      enemies.And ready to die.
+                    <p className="font-serif leading-relaxed text-center">
+                      Alone on the battlefield. Surrounded by death. Cornered by enemies. And ready to die.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book"}>
@@ -48,26 +54,24 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            {/* 2nd */}
+
+            {/* 2nd Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
                 <div className="inner">
                   <div className="front">
                     <Image
-                      alt="book Image"
+                      alt="The Channeling Zone book cover"
                       className="absolute inset-0 w-full h-full object-cover"
-                      src={require("../../public/image/thechanneling.jpg")}
+                      src={theChannelingImage}
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full  hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
+                  <div className="px-8 py-10 relative z-10 w-full hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
                     <h1 className="title-font text-2xl font-medium text-center mb-3">
                       The Channeling Zone
                     </h1>
                     <p className="font-serif leading-relaxed text-center">
-                      Neither a debunker nor an advocate, Brown weaves together
-                      the opinions and life stories of practicing channels and
-                      their clients to bring their world and its assumptions
-                      into higher relief.
+                      Neither a debunker nor an advocate, Brown weaves together the opinions and life stories of practicing channels and their clients to bring their world and its assumptions into higher relief.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book2"}>
@@ -80,25 +84,24 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            {/* 3rd */}
+
+            {/* 3rd Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
                 <div className="inner">
                   <div className="front">
                     <Image
-                      alt="book Image"
+                      alt="Writings of Charles S. Peirce book cover"
                       className="absolute inset-0 w-full h-full object-cover"
-                      src={require("../../public/image/book3.jpg")}
+                      src={book3Image}
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full  hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
+                  <div className="px-8 py-10 relative z-10 w-full hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
                     <h1 className="title-font text-2xl font-medium text-center mb-3">
                       Writings of Charles S. Peirce
                     </h1>
                     <p className="font-serif leading-relaxed text-center">
-                      This series contains large sections of previously
-                      unpublished material in addition to selected published
-                      works.
+                      This series contains large sections of previously unpublished material in addition to selected published works.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book3"}>
@@ -111,24 +114,24 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            {/* 4th */}
+
+            {/* 4th Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
                 <div className="inner">
                   <div className="front">
                     <Image
-                      alt="book Image"
+                      alt="The Phantom of the Opera book cover"
                       className="absolute inset-0 w-full h-full object-cover"
-                      src={require("../../public/image/book4.jpg")}
+                      src={book4Image}
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full  hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
+                  <div className="px-8 py-10 relative z-10 w-full hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
                     <h1 className="title-font text-2xl font-medium text-center mb-3">
-                      The phantom of the Opera
+                      The Phantom of the Opera
                     </h1>
                     <p className="font-serif leading-relaxed text-center">
-                      Christine is brought up by her itinerant musician father,
-                      whose death she mourns endlessly.
+                      Christine is brought up by her itinerant musician father, whose death she mourns endlessly.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book4"}>
@@ -141,24 +144,25 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            {/* 5th */}
+
+            {/* Repeat the same structure for the 5th and 6th books */}
+            {/* 5th Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
                 <div className="inner">
                   <div className="front">
                     <Image
-                      alt="book Image"
+                      alt="The Man in the Iron Mask book cover"
                       className="absolute inset-0 w-full h-full object-cover"
-                      src={require("../../public/image/book5.jpg")}
+                      src={book5Image}
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full  hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
+                  <div className="px-8 py-10 relative z-10 w-full hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
                     <h1 className="title-font text-2xl font-medium text-center mb-3">
-                      The man in the iron mask
+                      The Man in the Iron Mask
                     </h1>
                     <p className="font-serif leading-relaxed text-center">
-                      A simple retelling of the four Musketeers' final adventure
-                      during which they plot to replace King
+                      A simple retelling of the four Musketeers' final adventure during which they plot to replace the King.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book5"}>
@@ -171,24 +175,24 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            {/* 6th */}
+
+            {/* 6th Book */}
             <div className="box lg:w-1/3 sm:w-1/2 w-full p-4">
               <div className="pic mx-auto">
                 <div className="inner">
                   <div className="front">
                     <Image
-                      alt="book Image"
+                      alt="The Mark of Athena book cover"
                       className="absolute inset-0 w-full h-full object-cover"
-                      src={require("../../public/image/book6.jpg")}
+                      src={book6Image}
                     />
                   </div>
-                  <div className="px-8 py-10 relative z-10 w-full  hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
+                  <div className="px-8 py-10 relative z-10 w-full hover:opacity-100 back flex flex-col justify-between h-full bg-gray-800 text-white rounded">
                     <h1 className="title-font text-2xl font-medium text-center mb-3">
                       The Mark of Athena
                     </h1>
                     <p className="font-serif leading-relaxed text-center">
-                      "The Greek and Roman demigods will have to cooperate in
-                      order to defeat the giants released by the Earth
+                      "The Greek and Roman demigods will have to cooperate in order to defeat the giants released by the Earth."
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link target="_blank" href={"/book6"}>
@@ -201,7 +205,7 @@ const Gallery = () => {
                 </div>
               </div>
             </div>
-            {/* Repeat for other book as needed */}
+
           </div>
         </div>
       </section>

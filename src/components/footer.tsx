@@ -6,16 +6,16 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="bg-red-700  border-t-2 border-red-300">
+    <div className="bg-red-700 border-t-2 border-red-300">
       <footer className="text-red-950 body-font">
         <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <p className=" text-sm text-white mb-4 md:mb-0 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-red-300 sm:py-2 sm:mt-0 mt-4">
+          <p className="text-sm text-white mb-4 md:mb-0 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-red-300 sm:py-2 sm:mt-0 mt-4">
             © 2024 Bushra | All Right Reserved
           </p>
-          <div className="ml-12 ">
-            <ul className="footer-text mx-auto flex flex-wrap  ">
+          <div className="ml-12">
+            <ul className="footer-text mx-auto flex flex-wrap">
               <li>
-                <a href="/" className="line tag  text-white px-2 ">
+                <a href="/" className="line tag text-white px-2">
                   FAQ
                 </a>
               </li>
@@ -40,9 +40,9 @@ const Footer = () => {
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start text-2xl">
             <Link
               href={"https://github.com/bushramemon941"}
-              className="text-white ml-5 "
+              className="text-white ml-5"
             >
-              <FaGithub className="foot-icon  " {...(null as any)} />
+              <FaGithub className="foot-icon" />
             </Link>
 
             <Link
@@ -51,11 +51,11 @@ const Footer = () => {
               }
               className="ml-5 text-white"
             >
-              <FaLinkedin className="foot-icon" {...(null as any)} />
+              <FaLinkedin className="foot-icon" />
             </Link>
 
             <Link href={"mailto:"} className="ml-5 text-white">
-              <IoMdMail className="foot-icon " {...(null as any)} />
+              <IoMdMail className="foot-icon" />
             </Link>
           </span>
         </div>
