@@ -1,19 +1,14 @@
-"use client"
-import React from 'react'
-import Image from 'next/image'
-import './../style/book.css'
+"use client";
+import React from "react";
+import Image from "next/image";
+import "./../style/book.css";
 import { useState } from "react";
-import bookCover from "../../public/image/book3.jpg"; 
-
-
-
-
+import bookCover from "../../public/image/book3.jpg";
 
 const Book = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = () => {
-    
     console.log("Searching for:", searchQuery);
   };
 
@@ -43,11 +38,8 @@ const Book = () => {
         <a href="#"> Modern</a>
         <a href="#"> History & Surveys</a>
         <a href="#"> collected works</a>
-        <a href="#">  Logique, Philosophy,
-        </a>
-        <a href="#"> 1839-1914
-        </a>
-        
+        <a href="#"> Logique, Philosophy,</a>
+        <a href="#"> 1839-1914</a>
       </nav>
 
       {/* Book Display Section */}
@@ -57,18 +49,20 @@ const Book = () => {
           <h2 className="book-title">Writings of Charles S. Peirce</h2>
           <p className="book-author"> Charles Sanders Peirce</p>
           <p className="book-description">
-          This series contains large sections of previously unpublished material in addition to selected published works. Each volume includes a brief historical and biographical introduction, extensive editorial and textual notes, and a full chronological list of all of Peirce's writings, published and unpublished, during the period covered.
+            This series contains large sections of previously unpublished
+            material in addition to selected published works. Each volume
+            includes a brief historical and biographical introduction, extensive
+            editorial and textual notes, and a full chronological list of all of
+            Peirce's writings, published and unpublished, during the period
+            covered.
           </p>
           <div className="book-links">
             <a href="#">Search</a> | <a href="#">Find on Amazon</a>
           </div>
         </div>
       </div>
-
-     
     </div>
- 
-  )
-}
+  );
+};
 
 export default Book;

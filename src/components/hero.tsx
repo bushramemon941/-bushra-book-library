@@ -1,11 +1,10 @@
 "use client";
-import "../style/hero.css"
+import "../style/hero.css";
 
-import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Hero = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = () => {
     alert(`Searching for: ${searchQuery}`);

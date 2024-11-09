@@ -1,19 +1,14 @@
-"use client"
-import React from 'react'
-import Image from 'next/image'
-import './../style/book.css'
+"use client";
+import React from "react";
+import Image from "next/image";
+import "./../style/book.css";
 import { useState } from "react";
-import bookCover from "../../public/image/book5.jpg"; 
-
-
-
-
+import bookCover from "../../public/image/book5.jpg";
 
 const Book = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = () => {
-  
     console.log("Searching for:", searchQuery);
   };
 
@@ -41,11 +36,10 @@ const Book = () => {
         <a href="#">Recommended books</a>
         <a href="#"> History,</a>
         <a href="#">Fiction</a>
-        <a href="#">  Accessible book, </a>
-        <a href="#">   Protected DAISY,</a>
+        <a href="#"> Accessible book, </a>
+        <a href="#"> Protected DAISY,</a>
         <a href="#"> Classic Literature,</a>
         <a href="#"> OverDrive,</a>
-       
       </nav>
 
       {/* Book Display Section */}
@@ -55,20 +49,18 @@ const Book = () => {
           <h2 className="book-title"> The Man In The Iron Mask</h2>
           <p className="book-author">Alexandre Dumas</p>
           <p className="book-description">
-          A simple retelling of the four Musketeers'
-           final adventure during which they plot to replace King Louis XIV of France with the mysterious, masked prisoner in the Bastille believed to be Louis' 
-          falsely imprisoned twin brother and the true king.
+            A simple retelling of the four Musketeers' final adventure during
+            which they plot to replace King Louis XIV of France with the
+            mysterious, masked prisoner in the Bastille believed to be Louis'
+            falsely imprisoned twin brother and the true king.
           </p>
           <div className="book-links">
             <a href="#">Search</a> | <a href="#">Find on Amazon</a>
           </div>
         </div>
       </div>
-
-     
     </div>
- 
-  )
-}
+  );
+};
 
 export default Book;

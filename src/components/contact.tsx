@@ -14,7 +14,7 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-             Contact for more qureies.
+              Contact for more qureies.
             </p>
           </div>
 
@@ -53,7 +53,6 @@ const Contact = () => {
                     className="inputs w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-white focus:ring-2 focus:ring-orange-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                   ></input>
                 </div>
-
               </div>
               <div className="p-2 w-full">
                 <div className="relative">
@@ -73,7 +72,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              
               <div className="p-2 w-full">
                 <button
                   type="submit"
@@ -88,31 +86,37 @@ const Contact = () => {
 
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <Link
-                    href={"https://www.linkedin.com/in/bushra-memon-40b8a02b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpKYk5KeORaOk%2BmCeXL%2F7mQ%3D%3D"}
+                    href={
+                      "https://www.linkedin.com/in/bushra-memon-40b8a02b6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpKYk5KeORaOk%2BmCeXL%2F7mQ%3D%3D"
+                    }
                     className="  text-white ml-6"
                   >
-                    <FaGithub className="icon hover:text-orange-500" {...(null as any)} />
-
+                    <FaGithub
+                      className="icon hover:text-orange-500"
+                      {...(null as any)}
+                    />
                   </Link>
 
                   <Link
-                    href={
-                      "https://github.com/bushramemon941"
-                    }
+                    href={"https://github.com/bushramemon941"}
                     className=" text-white ml-6"
                   >
-                    <IoLogoLinkedin className="icon hover:text-orange-500"{...(null as any)} />
+                    <IoLogoLinkedin
+                      className="icon hover:text-orange-500"
+                      {...(null as any)}
+                    />
                   </Link>
 
                   <Link href={"mailto:"} className=" ml-6 text-white">
-                    <IoMdMail className="icon hover:text-orange-500"{...(null as any)} />
+                    <IoMdMail
+                      className="icon hover:text-orange-500"
+                      {...(null as any)}
+                    />
                   </Link>
                 </span>
               </div>
             </div>
           </div>
-
-
         </div>
       </form>
     </section>

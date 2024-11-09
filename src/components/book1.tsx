@@ -1,19 +1,14 @@
-"use client"
-import React from 'react'
-import Image from 'next/image'
-import './../style/book.css'
+"use client";
+import React from "react";
+import Image from "next/image";
+import "./../style/book.css";
 import { useState } from "react";
-import bookCover from "../../public/image/thelonedrow.jpg"; 
-
-
-
-
+import bookCover from "../../public/image/thelonedrow.jpg";
 
 const Book = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
   const handleSearch = () => {
-    
     console.log("Searching for:", searchQuery);
   };
 
@@ -44,8 +39,7 @@ const Book = () => {
         <a href="#">Romance</a>
         <a href="#"> Drizzt Do'Urden </a>
         <a href="#"> (Fictitious character),</a>
-        <a href="#">  Forgotten realms (Imaginary place)</a>
-        
+        <a href="#"> Forgotten realms (Imaginary place)</a>
       </nav>
 
       {/* Book Display Section */}
@@ -55,18 +49,20 @@ const Book = () => {
           <h2 className="book-title">The Lone Drow</h2>
           <p className="book-author">R. A. Salvatore</p>
           <p className="book-description">
-          Alone on the battlefield.Surrounded by death.Cornered by enemies.And ready to die.Drizzt Do'Urden has become the Hunter, the bane of the orc hordes still ravaging the North. Cut off, alone, convinced that everything he ever valued has been destroyed, all that's left is to kill, and kill, and kill, until there are no enemies left. But there are a lot of enemies, and even the Hunter is just one lone drow.
+            Alone on the battlefield.Surrounded by death.Cornered by enemies.And
+            ready to die.Drizzt Do'Urden has become the Hunter, the bane of the
+            orc hordes still ravaging the North. Cut off, alone, convinced that
+            everything he ever valued has been destroyed, all that's left is to
+            kill, and kill, and kill, until there are no enemies left. But there
+            are a lot of enemies, and even the Hunter is just one lone drow.
           </p>
           <div className="book-links">
             <a href="#">Search</a> | <a href="#">Find on Amazon</a>
           </div>
         </div>
       </div>
-
-     
     </div>
- 
-  )
-}
+  );
+};
 
 export default Book;
